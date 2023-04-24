@@ -1,0 +1,44 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 24 min SDK version: armeabi-v7a",
+    "file_": "D:\\AndroidStudio\\OpenCV4\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 76829345
+  },
+  {
+    "level_": 0,
+    "message_": "JSON \u0027D:\\AndroidStudio\\OpenCV4\\openCV\\.cxx\\Debug\\3j3a2g4b\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date",
+    "file_": "D:\\AndroidStudio\\OpenCV4\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1076464352
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "D:\\AndroidStudio\\OpenCV4\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1690029825
+  }
+]
