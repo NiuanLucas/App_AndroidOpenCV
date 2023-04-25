@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    
+    tools:context=".GrayScaleActivity">
+
+
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -13,7 +14,7 @@
         android:background="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
-    
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,12 +40,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/opencvText"
-        android:text="Hello World!"
+        android:text="A Activity de Grayscale em OpenCV no Android permite que o usuário converta uma imagem colorida em tons de cinza. Utilizando a biblioteca OpenCV, a imagem é convertida para uma matriz 2D de tons de cinza."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:justificationMode="inter_word"
         android:layout_below="@id/cameraButton"
         android:layout_centerHorizontal="true" />
 
