@@ -8,19 +8,34 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.imagepro.R;
+
 import org.opencv.android.OpenCVLoader;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button grayscaleButton, cameraButton;
+    static {
+        if(OpenCVLoader.initDebug()){
+            Log.d("MainActivity: ","Opencv is loaded");
+        }
+        else {
+            Log.d("MainActivity: ","Opencv failed to load");
+        }
+    }
 
+    private Button camera_button, grayscaleButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if(OpenCVLoader.initDebug()) Log.d("OPENCV:APP", "sucess");
-        else Log.d("OPENCV:APP", "failed");
+        camera_button=findViewById(R.id.cameraButton);
+        camera_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,CameraActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            }
+        });
 
         grayscaleButton = findViewById(R.id.grayscaleButton);
         grayscaleButton.setOnClickListener(new View.OnClickListener() {
@@ -30,20 +45,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        cameraButton = findViewById(R.id.cameraButton);
-        cameraButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, CameraActivity.class));
-            }
-        });
-
     }
-
-    public void openGrayscale() {
-        Intent intent = new Intent(this, GrayScaleActivity.class);
-        startActivity(intent);
-    }
-
-
 }

@@ -15,6 +15,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.imagepro.R;
+
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
 import org.opencv.core.Mat;
@@ -35,7 +37,7 @@ public class GrayScaleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gray_scale_open_cv);
+        setContentView(R.layout.activity_gray_scale);
         TextView textView = (TextView) findViewById(R.id.opencvText);
 
         if(OpenCVLoader.initDebug()) Log.d("OPENCV:APP", "sucess");
